@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="App1.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel HorizontalAlignment="Center"
+                    Padding="30">
+            <TextBlock Text="Hello, world!" Margin="20" Width="200"
+                       HorizontalAlignment="Left"/>
+
+            <TextBlock Text="Write your name: " Margin="20" Width="200"
+                       HorizontalAlignment="Left"/>
+
+            <TextBox x:Name="txboxName" Width="200" Margin="20"
+                     HorizontalAlignment="Left"/>
+
+            <Button x:Name="btnOK" Margin="20" Content="OK" Click="buttonClick"/>
+
+            <TextBlock x:Name="txbWrite" HorizontalAlignment="Left" Margin="20"/>
+
+        </StackPanel>
+    </Grid>
+</Page>
